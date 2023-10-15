@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\IngredientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ use App\Http\Controllers\CategoryController;
 // });
 
 Route::get('/categories', [CategoryController::class, 'categories']);
+Route::get('/ingredients', [IngredientController::class, 'ingredients']);
