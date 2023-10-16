@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Categories;
-use App\Http\Resources\CategoryCollection;
+use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    public function categories() : CategoryCollection {
-        return new CategoryCollection(Categories::all());
+    public function index()
+    {
+        return Category::all();
     }
+
+    // public function categories()
+    // {
+    //     return Categories::all();
+    // }
 }
