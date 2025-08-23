@@ -1,435 +1,289 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('judul')</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- favicon
-		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url("/green-horizotal/img/favicon.ico") }}">
-    <!-- Google Fonts
-		============================================ -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
-    <!-- Bootstrap CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/bootstrap.min.css") }}">
-    <!-- Bootstrap CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/font-awesome.min.css") }}">
-    <!-- owl.carousel CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/owl.carousel.css") }}">
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/owl.theme.css") }}">
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/owl.transitions.css") }}">
-    <!-- meanmenu CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/meanmenu/meanmenu.min.css") }}">
-    <!-- animate CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/animate.css") }}">
-    <!-- normalize CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/normalize.css") }}">
-    <!-- mCustomScrollbar CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/scrollbar/jquery.mCustomScrollbar.min.css") }}">
-    <!-- jvectormap CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/jvectormap/jquery-jvectormap-2.0.3.css") }}">
-    <!-- notika icon CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/notika-custom-icon.css") }}">
-    <!-- wave CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/wave/waves.min.css") }}">
-    <!-- main CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/main.css") }}">
-    <!-- style CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/style.css") }}">
-    <!-- responsive CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{ url("/green-horizotal/css/responsive.css") }}">
-    <!-- modernizr JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/vendor/modernizr-2.8.3.min.js") }}"></script>
-</head>
 
-<body>
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- Start Header Top Area -->
-    <div class="header-top-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="logo-area">
-                        <a href="{{ url("/vendor") }}"><img src="{{ url("/green-horizotal/img/logo/logo.png") }}" alt="" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <div class="header-top-menu">
-                        <ul class="nav navbar-nav notika-top-nav">
-                            <li class="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-search"></i></span></a>
-                                <div role="menu" class="dropdown-menu search-dd animated flipInX">
-                                    <div class="search-input">
-                                        <i class="notika-icon notika-left-arrow"></i>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-mail"></i></span></a>
-                                <div role="menu" class="dropdown-menu message-dd animated zoomIn">
-                                    <div class="hd-mg-tt">
-                                        <h2>Messages</h2>
-                                    </div>
-                                    <div class="hd-message-info">
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/1.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/2.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Jonathan Morris</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/4.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Fredric Mitchell</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/1.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/2.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Glenn Jecobs</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="hd-mg-va">
-                                        <a href="#">View All</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-alarm"></i></span></a>
-                                <div role="menu" class="dropdown-menu message-dd notification-dd animated zoomIn">
-                                    <div class="hd-mg-tt">
-                                        <h2>Notification</h2>
-                                    </div>
-                                    <div class="hd-message-info">
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/1.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/2.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Jonathan Morris</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/4.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Fredric Mitchell</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/1.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/2.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Glenn Jecobs</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="hd-mg-va">
-                                        <a href="#">View All</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-menus"></i></span></a>
-                                <div role="menu" class="dropdown-menu message-dd task-dd animated zoomIn">
-                                    <div class="hd-mg-tt">
-                                        <h2>Tasks</h2>
-                                    </div>
-                                    <div class="hd-message-info hd-task-info">
-                                        <div class="skill">
-                                            <div class="progress">
-                                                <div class="lead-content">
-                                                    <p>HTML5 Validation Report</p>
-                                                </div>
-                                                <div class="progress-bar wow fadeInLeft" data-progress="95%" style="width: 95%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>95%</span>
-                                                </div>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="lead-content">
-                                                    <p>Google Chrome Extension</p>
-                                                </div>
-                                                <div class="progress-bar wow fadeInLeft" data-progress="85%" style="width: 85%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>85%</span> </div>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="lead-content">
-                                                    <p>Social Internet Projects</p>
-                                                </div>
-                                                <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>75%</span> </div>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="lead-content">
-                                                    <p>Bootstrap Admin</p>
-                                                </div>
-                                                <div class="progress-bar wow fadeInLeft" data-progress="93%" style="width: 65%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>65%</span> </div>
-                                            </div>
-                                            <div class="progress progress-bt">
-                                                <div class="lead-content">
-                                                    <p>Youtube App</p>
-                                                </div>
-                                                <div class="progress-bar wow fadeInLeft" data-progress="55%" style="width: 55%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>55%</span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="hd-mg-va">
-                                        <a href="#">View All</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-chat"></i></span></a>
-                                <div role="menu" class="dropdown-menu message-dd chat-dd animated zoomIn">
-                                    <div class="hd-mg-tt">
-                                        <h2>Chat</h2>
-                                    </div>
-                                    <div class="search-people">
-                                        <i class="notika-icon notika-left-arrow"></i>
-                                        <input type="text" placeholder="Search People" />
-                                    </div>
-                                    <div class="hd-message-info">
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img chat-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/1.jpg") }}" alt="" />
-                                                    <div class="chat-avaible"><i class="notika-icon notika-dot"></i></div>
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Available</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img chat-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/2.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Jonathan Morris</h3>
-                                                    <p>Last seen 3 hours ago</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img chat-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/4.jpg") }}" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Fredric Mitchell</h3>
-                                                    <p>Last seen 2 minutes ago</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img chat-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/1.jpg") }}" alt="" />
-                                                    <div class="chat-avaible"><i class="notika-icon notika-dot"></i></div>
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Available</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img chat-img">
-                                                    <img src="{{ url("/green-horizotal/img/post/2.jpg") }}" alt="" />
-                                                    <div class="chat-avaible"><i class="notika-icon notika-dot"></i></div>
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Glenn Jecobs</h3>
-                                                    <p>Available</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="hd-mg-va">
-                                        <a href="#">View All</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #EAEDED;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a8a8a8; }
+
+        .amazon-blue { background-color: #131921; }
+        .amazon-yellow { background-color: #FEBD69; }
+        .amazon-yellow-dark { background-color: #F3A847; }
+        .amazon-light-blue { background-color: #232F3E; }
+        .amazon-footer-bg { background-color: #232F3E; }
+        .amazon-footer-bottom-bg { background-color: #131A22; }
+
+        /* Accordion styles for mobile footer */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        /* Transition for filter sidebar */
+        #filter-content {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Main Header -->
+    <header class="amazon-blue text-white sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold border-2 border-transparent hover:border-white p-2 rounded-sm">Tokoshop</a>
+
+            <!-- Search Bar -->
+            <div class="hidden md:flex flex-grow mx-4">
+                <select class="bg-gray-200 text-black text-sm rounded-l-md border-r border-gray-300 px-2">
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Books</option>
+                    <option>Home</option>
+                </select>
+                <input type="text" placeholder="Search Tokoshop..." class="w-full p-2 text-black focus:outline-none">
+                <button class="amazon-yellow hover:amazon-yellow-dark text-black p-2 rounded-r-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+            </div>
+
+            <!-- Right Side Links -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden sm:block border-2 border-transparent hover:border-white p-2 rounded-sm">
+                    <div>Hello, Sign in</div>
+                    <div class="font-bold">Account & Lists</div>
+                </a>
+                <a href="#" class="hidden lg:block border-2 border-transparent hover:border-white p-2 rounded-sm">
+                    <div>Returns</div>
+                    <div class="font-bold">& Orders</div>
+                </a>
+                <a href="#" class="flex items-end border-2 border-transparent hover:border-white p-2 rounded-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    <span class="font-bold text-lg text-amazon-yellow ml-1">0</span>
+                </a>
             </div>
         </div>
-    </div>
-    <!-- End Header Top Area -->
+        <!-- Search Bar for Mobile -->
+        <div class="md:hidden px-4 pb-2">
+            <div class="flex flex-grow">
+                <input type="text" placeholder="Search Tokoshop..." class="w-full p-2 text-black rounded-l-md focus:outline-none">
+                <button class="amazon-yellow hover:amazon-yellow-dark text-black p-2 rounded-r-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    @yield('header')
+    <!-- Sub Header -->
+    <nav class="amazon-light-blue text-white">
+        <div class="container mx-auto px-4 py-2 flex items-center space-x-4 text-sm">
+            <button class="flex items-center font-bold"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>All</button>
+            <a href="#" class="hover:underline">Today's Deals</a>
+            <a href="#" class="hover:underline">Customer Service</a>
+            <a href="#" class="hover:underline">Registry</a>
+            <a href="#" class="hover:underline">Gift Cards</a>
+            <a href="#" class="hover:underline">Sell</a>
+        </div>
+    </nav>
 
     @yield('content')
 
-    <!-- Start Footer area-->
-    <div class="footer-copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="footer-copy-right">
-                        <p>Copyright © 2018
-. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+    <!-- Footer -->
+    <footer class="text-white">
+        <!-- Back to Top -->
+        <div class="bg-gray-700 hover:bg-gray-600 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            <p class="text-center py-4 text-sm">Back to top</p>
+        </div>
+
+        <!-- Main Footer Links -->
+        <div class="amazon-footer-bg py-10">
+            <div class="container mx-auto px-4">
+                <!-- Desktop Grid -->
+                <div class="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+                    <div>
+                        <h3 class="font-bold mb-2">Get to Know Us</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:underline">Careers</a></li>
+                            <li><a href="#" class="hover:underline">Blog</a></li>
+                            <li><a href="#" class="hover:underline">About Tokoshop</a></li>
+                            <li><a href="#" class="hover:underline">Investor Relations</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Make Money with Us</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:underline">Sell products on Tokoshop</a></li>
+                            <li><a href="#" class="hover:underline">Sell on Tokoshop Business</a></li>
+                            <li><a href="#" class="hover:underline">Become an Affiliate</a></li>
+                            <li><a href="#" class="hover:underline">Advertise Your Products</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Tokoshop Payment Products</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:underline">Tokoshop Business Card</a></li>
+                            <li><a href="#" class="hover:underline">Shop with Points</a></li>
+                            <li><a href="#" class="hover:underline">Reload Your Balance</a></li>
+                            <li><a href="#" class="hover:underline">Tokoshop Currency Converter</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Let Us Help You</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:underline">Your Account</a></li>
+                            <li><a href="#" class="hover:underline">Your Orders</a></li>
+                            <li><a href="#" class="hover:underline">Shipping Rates & Policies</a></li>
+                            <li><a href="#" class="hover:underline">Returns & Replacements</a></li>
+                            <li><a href="#" class="hover:underline">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Mobile Accordion -->
+                <div class="md:hidden text-sm">
+                    <div class="border-b border-gray-600 py-3">
+                        <button class="accordion-header w-full flex justify-between items-center font-bold">
+                            <span>Get to Know Us</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-content pt-2">
+                            <ul class="space-y-2 text-gray-300 pl-2">
+                                <li><a href="#" class="hover:underline">Careers</a></li>
+                                <li><a href="#" class="hover:underline">Blog</a></li>
+                                <li><a href="#" class="hover:underline">About Tokoshop</a></li>
+                                <li><a href="#" class="hover:underline">Investor Relations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-600 py-3">
+                         <button class="accordion-header w-full flex justify-between items-center font-bold">
+                            <span>Make Money with Us</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-content pt-2">
+                            <ul class="space-y-2 text-gray-300 pl-2">
+                                <li><a href="#" class="hover:underline">Sell products on Tokoshop</a></li>
+                                <li><a href="#" class="hover:underline">Sell on Tokoshop Business</a></li>
+                                <li><a href="#" class="hover:underline">Become an Affiliate</a></li>
+                                <li><a href="#" class="hover:underline">Advertise Your Products</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-600 py-3">
+                        <button class="accordion-header w-full flex justify-between items-center font-bold">
+                            <span>Tokoshop Payment Products</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-content pt-2">
+                            <ul class="space-y-2 text-gray-300 pl-2">
+                                <li><a href="#" class="hover:underline">Tokoshop Business Card</a></li>
+                                <li><a href="#" class="hover:underline">Shop with Points</a></li>
+                                <li><a href="#" class="hover:underline">Reload Your Balance</a></li>
+                                <li><a href="#" class="hover:underline">Tokoshop Currency Converter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-600 py-3">
+                        <button class="accordion-header w-full flex justify-between items-center font-bold">
+                            <span>Let Us Help You</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-content pt-2">
+                            <ul class="space-y-2 text-gray-300 pl-2">
+                                <li><a href="#" class="hover:underline">Your Account</a></li>
+                                <li><a href="#" class="hover:underline">Your Orders</a></li>
+                                <li><a href="#" class="hover:underline">Shipping Rates & Policies</a></li>
+                                <li><a href="#" class="hover:underline">Returns & Replacements</a></li>
+                                <li><a href="#" class="hover:underline">Help</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Footer area-->
-    <!-- jquery
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/vendor/jquery-1.12.4.min.js") }}"></script>
-    <!-- bootstrap JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/bootstrap.min.js") }}"></script>
-    <!-- wow JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/wow.min.js") }}"></script>
-    <!-- price-slider JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/jquery-price-slider.js") }}"></script>
-    <!-- owl.carousel JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/owl.carousel.min.js") }}"></script>
-    <!-- scrollUp JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/jquery.scrollUp.min.js") }}"></script>
-    <!-- meanmenu JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/meanmenu/jquery.meanmenu.js") }}"></script>
-    <!-- counterup JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/counterup/jquery.counterup.min.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/counterup/waypoints.min.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/counterup/counterup-active.js") }}"></script>
-    <!-- mCustomScrollbar JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/scrollbar/jquery.mCustomScrollbar.concat.min.js") }}"></script>
-    <!-- jvectormap JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/jvectormap/jquery-jvectormap-2.0.2.min.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/jvectormap/jquery-jvectormap-world-mill-en.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/jvectormap/jvectormap-active.js") }}"></script>
-    <!-- sparkline JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/sparkline/jquery.sparkline.min.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/sparkline/sparkline-active.js") }}"></script>
-    <!-- sparkline JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/flot/jquery.flot.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/flot/jquery.flot.resize.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/flot/curvedLines.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/flot/flot-active.js") }}"></script>
-    <!-- knob JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/knob/jquery.knob.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/knob/jquery.appear.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/knob/knob-active.js") }}"></script>
-    <!--  wave JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/wave/waves.min.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/wave/wave-active.js") }}"></script>
-    <!--  todo JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/todo/jquery.todo.js") }}"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/plugins.js") }}"></script>
-	<!--  Chat JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/chat/moment.min.js") }}"></script>
-    <script src="{{ url("/green-horizotal/js/chat/jquery.chat.js") }}"></script>
-    <!-- main JS
-		============================================ -->
-    <script src="{{ url("/green-horizotal/js/main.js") }}"></script>
-</body>
 
+        <!-- Bottom Footer -->
+        <div class="amazon-footer-bottom-bg py-6">
+            <div class="container mx-auto px-4 text-center text-gray-300 text-xs">
+                <p>&copy; 2025, Tokoshop.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile footer accordion
+            const accordions = document.querySelectorAll('.accordion-header');
+            accordions.forEach(accordion => {
+                accordion.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    const content = this.nextElementSibling;
+                    const indicator = this.querySelector('span:last-child');
+
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        indicator.textContent = '+';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        indicator.textContent = '-';
+                    }
+                });
+            });
+
+            // Mobile filter sidebar functionality
+            const filterSidebar = document.getElementById('filter-sidebar');
+            const filterContent = document.getElementById('filter-content');
+            const showFilterBtn = document.getElementById('show-filter-btn');
+            const doneFilterBtn = document.getElementById('done-filter-btn');
+            const closeFilterBtn = document.getElementById('close-filter-btn');
+
+            const openFilter = () => {
+                filterSidebar.classList.remove('hidden');
+                // Use a timeout to allow the display property to change before starting the transition
+                setTimeout(() => {
+                    filterContent.classList.remove('-translate-x-full');
+                }, 10);
+            };
+
+            const closeFilter = () => {
+                filterContent.classList.add('-translate-x-full');
+                // Hide the overlay after the transition completes
+                setTimeout(() => {
+                    filterSidebar.classList.add('hidden');
+                }, 300);
+            };
+
+            showFilterBtn.addEventListener('click', openFilter);
+            doneFilterBtn.addEventListener('click', closeFilter);
+            closeFilterBtn.addEventListener('click', closeFilter);
+
+            // Close filter if user clicks on the background overlay
+            filterSidebar.addEventListener('click', function(event) {
+                if (event.target === filterSidebar) {
+                    closeFilter();
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>
